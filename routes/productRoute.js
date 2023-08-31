@@ -15,7 +15,9 @@ const {
 const { authenticatedUser, authorizeRoles } = require("../middleware/auth");
 
 //get requests
-router.route("/products").get(getAllProducts);
+router
+  .route("/products")
+  .get(authenticatedUser, authorizeRoles("admin"), getAllProducts);
 router.route("/product/:id").get(getOneProduct);
 
 // post requests

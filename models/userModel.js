@@ -14,8 +14,7 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: [true, "Please enter your email address"],
     unique: true,
-    validate: validator.isEmail,
-    message: "Please enter a valid email address",
+    validate: [validator.isEmail, "Please enter a valid email address"],
   },
   password: {
     type: String,
@@ -35,7 +34,7 @@ const userSchema = new mongoose.Schema({
   },
   role: {
     type: String,
-    enum: ["admin", "user"],
+    enum: ["admin", "user", "seller"],
     default: "user",
   },
   createdAt: {

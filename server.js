@@ -51,14 +51,14 @@ process.on("uncaughtException", (err) => {
 
 connectDB();
 
+//middleware to handle errors
+app.use(errorMiddleWare);
+
 //routes URIs
 app.use("/api/v3/", products);
 app.use("/api/v3/", auth);
 app.use("/api/v3/", order);
 // app.use('/api/v3/', payments);
-
-//middleware to handle errors
-app.use(errorMiddleWare);
 
 // app.get('/', (req, res) => {
 //     res.json({message: 'Hello from server!'})
