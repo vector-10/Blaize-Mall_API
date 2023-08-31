@@ -21,7 +21,7 @@ const registerUser = catchAsyncErrors(async (req, res, next) => {
     );
   }
 
-  // Assign admin role to the very first signup
+  // Assign admin role to the very first registered user
   const theFirstAccount = (await User.countDocuments({})) === 0;
   const role = theFirstAccount ? "admin" : "user";
 
