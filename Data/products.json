@@ -1,0 +1,231 @@
+[{
+    "name": "Gaming Mouse",
+    "price": 49.99,
+    "description": "Ergonomic gaming mouse with high precision sensor",
+    "rating": 4.5,
+    "images":[{
+        "_id":"5fbff18969d82f316438f3d0",
+        "public_id": "products/tzfsnr1i3szrdnb4jgge",
+        "url":"https:??res.cloudinary.com/shopit/image/upload/v1606231282/products/tzfsnr1i3szrdnb4jgge.jpg"
+    }],
+    "category": "Electronics",
+    "seller": "Tech Store",
+    "stock": 100, 
+    "numOfReviews":"5",
+    "reviews":[{
+        "name": "John",
+        "rating":4.5,
+        "comment": "Best gaming mouse I've used so far!"    
+
+    }]
+  },
+{
+    "name": "Gaming Laptop",
+    "price": 49.99,
+    "description": "Ergonomic gaming laptop with high precision sensor",
+    "rating": 4.5,
+    "images":[{
+        "_id":"5fbff18969d82f316438f3d0",
+        "public_id": "products/tzfsnr1i3szrdnb4jgge",
+        "url":"https:??res.cloudinary.com/shopit/image/upload/v1606231282/products/tzfsnr1i3szrdnb4jgge.jpg"
+    }],
+    "category": "Electronics",
+    "seller": "Tech Store",
+    "stock": 100, 
+    "numOfReviews":"5",
+    "reviews":[{
+        "name": "John",
+        "rating":4.5,
+        "comment": "Best gaming mouse I've used so far!"    
+
+    }]
+  }
+,{
+    "name": "Flash drive",
+    "price": 49.99,
+    "description": "The best flash drive money can buy",
+    "rating": 4.5,
+    "images":[{
+        "_id":"5fbff18969d82f316438f3d0",
+        "public_id": "products/tzfsnr1i3szrdnb4jgge",
+        "url":"https:??res.cloudinary.com/shopit/image/upload/v1606231282/products/tzfsnr1i3szrdnb4jgge.jpg"
+    }],
+    "category": "Electronics",
+    "seller": "Tech Store",
+    "stock": 100, 
+    "numOfReviews":"5",
+    "reviews":[{
+        "name": "John",
+        "rating":4.5,
+        "comment": "Best gaming mouse I've used so far!"    
+
+    }]
+  }
+,{
+    "name": "Gaming Mouse",
+    "price": 49.99,
+    "description": "Ergonomic gaming mouse with high precision sensor",
+    "rating": 4.5,
+    "images":[{
+        "_id":"5fbff18969d82f316438f3d0",
+        "public_id": "products/tzfsnr1i3szrdnb4jgge",
+        "url":"https:??res.cloudinary.com/shopit/image/upload/v1606231282/products/tzfsnr1i3szrdnb4jgge.jpg"
+    }],
+    "category": "Electronics",
+    "seller": "Tech Store",
+    "stock": 100, 
+    "numOfReviews":"5",
+    "reviews":[{
+        "name": "John",
+        "rating":4.5,
+        "comment": "Best gaming mouse I've used so far!"    
+
+    }]
+  }
+,{
+    "name": "Gaming Mouse",
+    "price": 49.99,
+    "description": "Ergonomic gaming mouse with high precision sensor",
+    "rating": 4.5,
+    "images":[{
+        "_id":"5fbff18969d82f316438f3d0",
+        "public_id": "products/tzfsnr1i3szrdnb4jgge",
+        "url":"https:??res.cloudinary.com/shopit/image/upload/v1606231282/products/tzfsnr1i3szrdnb4jgge.jpg"
+    }],
+    "category": "Electronics",
+    "seller": "Tech Store",
+    "stock": 100, 
+    "numOfReviews":"5",
+    "reviews":[{
+        "name": "John",
+        "rating":4.5,
+        "comment": "Best gaming mouse I've used so far!"    
+
+    }]
+  }
+,{
+    "name": "Gaming Mouse",
+    "price": 49.99,
+    "description": "Ergonomic gaming mouse with high precision sensor",
+    "rating": 4.5,
+    "images":[{
+        "_id":"5fbff18969d82f316438f3d0",
+        "public_id": "products/tzfsnr1i3szrdnb4jgge",
+        "url":"https:??res.cloudinary.com/shopit/image/upload/v1606231282/products/tzfsnr1i3szrdnb4jgge.jpg"
+    }],
+    "category": "Electronics",
+    "seller": "Tech Store",
+    "stock": 100, 
+    "numOfReviews":"5",
+    "reviews":[{
+        "name": "John",
+        "rating":4.5,
+        "comment": "Best gaming mouse I've used so far!"    
+
+    }]
+  }
+,{
+    "name": "Gaming Mouse",
+    "price": 49.99,
+    "description": "Ergonomic gaming mouse with high precision sensor",
+    "rating": 4.5,
+    "images":[{
+        "_id":"5fbff18969d82f316438f3d0",
+        "public_id": "products/tzfsnr1i3szrdnb4jgge",
+        "url":"https:??res.cloudinary.com/shopit/image/upload/v1606231282/products/tzfsnr1i3szrdnb4jgge.jpg"
+    }],
+    "category": "Electronics",
+    "seller": "Tech Store",
+    "stock": 100, 
+    "numOfReviews":"5",
+    "reviews":[{
+        "name": "John",
+        "rating":4.5,
+        "comment": "Best gaming mouse I've used so far!"    
+
+    }]
+  }
+,{
+    "name": "Gaming Mouse",
+    "price": 49.99,
+    "description": "Ergonomic gaming mouse with high precision sensor",
+    "rating": 4.5,
+    "images":[{
+        "_id":"5fbff18969d82f316438f3d0",
+        "public_id": "products/tzfsnr1i3szrdnb4jgge",
+        "url":"https:??res.cloudinary.com/shopit/image/upload/v1606231282/products/tzfsnr1i3szrdnb4jgge.jpg"
+    }],
+    "category": "Electronics",
+    "seller": "Tech Store",
+    "stock": 100, 
+    "numOfReviews":"5",
+    "reviews":[{
+        "name": "John",
+        "rating":4.5,
+        "comment": "Best gaming mouse I've used so far!"    
+
+    }]
+  }
+,{
+    "name": "Gaming Mouse",
+    "price": 49.99,
+    "description": "Ergonomic gaming mouse with high precision sensor",
+    "rating": 4.5,
+    "images":[{
+        "_id":"5fbff18969d82f316438f3d0",
+        "public_id": "products/tzfsnr1i3szrdnb4jgge",
+        "url":"https:??res.cloudinary.com/shopit/image/upload/v1606231282/products/tzfsnr1i3szrdnb4jgge.jpg"
+    }],
+    "category": "Electronics",
+    "seller": "Tech Store",
+    "stock": 100, 
+    "numOfReviews":"5",
+    "reviews":[{
+        "name": "John",
+        "rating":4.5,
+        "comment": "Best gaming mouse I've used so far!"    
+
+    }]
+  }
+,{
+    "name": "Gaming Mouse",
+    "price": 49.99,
+    "description": "Ergonomic gaming mouse with high precision sensor",
+    "rating": 4.5,
+    "images":[{
+        "_id":"5fbff18969d82f316438f3d0",
+        "public_id": "products/tzfsnr1i3szrdnb4jgge",
+        "url":"https:??res.cloudinary.com/shopit/image/upload/v1606231282/products/tzfsnr1i3szrdnb4jgge.jpg"
+    }],
+    "category": "Electronics",
+    "seller": "Tech Store",
+    "stock": 100, 
+    "numOfReviews":"5",
+    "reviews":[{
+        "name": "John",
+        "rating":4.5,
+        "comment": "Best gaming mouse I've used so far!"    
+
+    }]
+  }
+,{
+    "name": "Gaming Mouse",
+    "price": 49.99,
+    "description": "Ergonomic gaming mouse with high precision sensor",
+    "rating": 4.5,
+    "images":[{
+        "_id":"5fbff18969d82f316438f3d0",
+        "public_id": "products/tzfsnr1i3szrdnb4jgge",
+        "url":"https:??res.cloudinary.com/shopit/image/upload/v1606231282/products/tzfsnr1i3szrdnb4jgge.jpg"
+    }],
+    "category": "Electronics",
+    "seller": "Tech Store",
+    "stock": 100, 
+    "numOfReviews":"5",
+    "reviews":[{
+        "name": "John",
+        "rating":4.5,
+        "comment": "Best gaming mouse I've used so far!"    
+
+    }]
+  }]
