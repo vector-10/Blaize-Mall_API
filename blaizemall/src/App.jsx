@@ -1,5 +1,5 @@
 import "./App.css";
-// import { useEffect } from "react";
+import { useEffect } from "react";
 import Header from "./components/Layouts/Header";
 import Footer from "./components/Layouts/Footer";
 import Home from "./components/Home";
@@ -10,9 +10,16 @@ import Register from "./components/Users/Register";
 import Login from "./components/Users/Login";
 import Landing from "./components/Users/Landing";
 import Profile from "./components/Users/Profile";
+import { loadUser } from "./redux/actions/authActions";
+import store from "./redux/store";
 //import ProtectedRoute from "./components/route/ProtectedRoute";
 
 function App() {
+  //useffect functions to load user from backend
+  useEffect(() => {
+    store.dispatch(loadUser());
+  }, []);
+
   return (
     <div className="app">
       <Header />

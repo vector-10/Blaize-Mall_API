@@ -35,7 +35,7 @@ const Profile = () => {
               <h4>Full Name</h4>
               <p>{user && user.name}</p>
               <h4>Email Address</h4>
-              <p>duzieblaise9@gmail.com</p>
+              <p>{user.email}</p>
               {user.role !== "admin" && (
                 <Link to="/orders/me" className="btn btn-danger btn-block mt-5">
                   My Orders

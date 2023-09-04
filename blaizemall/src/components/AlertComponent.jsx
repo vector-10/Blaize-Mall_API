@@ -1,5 +1,7 @@
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
+import "react-toastify/dist/ReactToastify.css";
+
 const AlertComponent = ({ message, timeout, type }) => {
   const [showNotification, setShowNotitifcation] = useState(true);
 
