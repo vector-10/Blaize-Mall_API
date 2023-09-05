@@ -68,12 +68,12 @@ const UpdateProfile = () => {
 
                   <div className="form-outline mb-2">
                     <input
-                      type="email"
+                      type="text"
                       id="form3Example3"
                       className="form-control form-control-lg"
-                      placeholder="Enter a valid email address"
+                      placeholder="Enter your full Name"
                       name="name"
-                      value={name}
+                      value={formData.name}
                       onChange={(e) =>
                         setFormData({ ...formData, name: e.target.value })
                       }
@@ -85,11 +85,11 @@ const UpdateProfile = () => {
 
                   <div className="form-outline mb-2">
                     <input
-                      type="password"
+                      type="email"
                       id="form3Example4"
                       className="form-control form-control-lg"
-                      placeholder="Enter password"
-                      name="password"
+                      placeholder="Enter a valid email address"
+                      name="email"
                       value={formData.email}
                       onChange={(e) =>
                         setFormData({ ...formData, email: e.target.value })
