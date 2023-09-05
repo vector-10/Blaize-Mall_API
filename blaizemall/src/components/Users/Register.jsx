@@ -1,15 +1,13 @@
 import { useState, useEffect } from "react";
 import { useNavigate, Link } from "react-router-dom";
-// import Loader from "../Layouts/Loader";
+//import Loader from "../Layouts/Loader";
 //import AlertComponent from "../AlertComponent";
 import { useDispatch, useSelector } from "react-redux";
 import { register, clearErrors } from "../../redux/actions/authActions";
 import { motion } from "framer-motion";
 import illustration from "../../imagesandicons/animated-seller.svg";
 
-//import avatarpreview from "../../imagesandicons/avatar-removebg-preview.png";
-
-// animation oarameters for framer-motion
+// animation parameters for framer-motion
 const imageVariants = {
   hidden: { y: -5 },
   visible: {

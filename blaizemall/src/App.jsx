@@ -12,6 +12,7 @@ import Landing from "./components/Users/Landing";
 import Profile from "./components/Users/Profile";
 import { loadUser } from "./redux/actions/authActions";
 import store from "./redux/store";
+import UpdateProfile from "./components/Users/UpdateProfile";
 //import ProtectedRoute from "./components/route/ProtectedRoute";
 
 function App() {
@@ -28,12 +29,12 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/" element={<Landing />} />
         <Route path="/login" element={<Login />} />
-
         <Route path="/wrongsearch" element={<Wrongsearch />} />
         <Route path="/product/:productId" element={<ProductDetailsPage />} />
         <Route path="/search/:keywordSearch" element={<Home />} />
         {/* protected routes from regular users */}
         <Route path="/me" element={<Profile />} exact />
+        <Route path="/me/update" element={<UpdateProfile />} />
       </Routes>
       <Footer />
     </div>

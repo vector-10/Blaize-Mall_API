@@ -72,12 +72,10 @@ export const login = (email, password) => async (dispatch) => {
   }
 };
 
-export const loadUser = (userData) => async (dispatch) => {
+export const loadUser = () => async (dispatch) => {
   try {
     dispatch({ type: LOAD_USER_REQUEST });
-
     const { data } = await axios.get(`${url}/api/v3/me`);
-    console.log(userData);
     dispatch({
       type: LOAD_USER_SUCCESS,
       payload: data.user,
@@ -127,7 +125,7 @@ export const updateUserProfile = (userData) => async (dispatch) => {
   } catch (error) {
     dispatch({
       type: UPDATE_PROFILE_FAIL,
-      payload: error.response.data.message,
+      payload: error.response?.data.message,
     });
   }
 };

@@ -23,7 +23,7 @@ const Header = () => {
               {" "}
               BlaizeMall
             </div>
-            <Link to="/">
+            <Link to="/home">
               <img
                 src={logo}
                 alt="mall logo"
