@@ -12,7 +12,7 @@ const Profile = () => {
         <Loader />
       ) : (
         <div className="vh-100  ">
-          <h2 className="mt-5 nl-5 px-5">My Profile</h2>
+          <h2 className="mt-1 nl-5 px-5">{`${user.name}`}Profile</h2>
           <div className="row justify-content-around mt-5 user-info">
             <div className="col-12 col-md-3">
               <figure className="avatar avatar-profile">
@@ -20,7 +20,7 @@ const Profile = () => {
                   src={profileimage}
                   className="rounded-circle img-fluid"
                   alt="profile"
-                  style={{ width: "200px", height: "200px" }}
+                  style={{ width: "150px", height: "150px" }}
                 />
               </figure>
               <Link

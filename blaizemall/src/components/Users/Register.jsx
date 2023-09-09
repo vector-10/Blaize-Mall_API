@@ -73,7 +73,7 @@ const Register = () => {
                 initial="hidden"
                 animate="visible"
                 src={illustration}
-                className="img-fluid "
+                className="img-fluid"
                 alt="Sample image"
               />
             </div>
@@ -90,7 +90,7 @@ const Register = () => {
 
                 <div className="divider d-flex align-items-center my-4"></div>
 
-                <div className="form-outline mb-2">
+                <div className="form-outline mb-1">
                   <input
                     type="name"
                     id="name_field"
@@ -104,7 +104,7 @@ const Register = () => {
                     Name
                   </label>
                 </div>
-                <div className="form-outline mb-2">
+                <div className="form-outline mb-1">
                   <input
                     type="email"
                     id="form3Example3"
@@ -119,7 +119,7 @@ const Register = () => {
                   </label>
                 </div>
 
-                <div className="form-outline mb-2">
+                <div className="form-outline mb-1">
                   <input
                     type="password"
                     id="form3Example4"
@@ -133,7 +133,7 @@ const Register = () => {
                     Password
                   </label>
                 </div>
-                <div className="form-outline mb-2">
+                <div className="form-outline mb-1">
                   <input
                     type="password"
                     id="form3Example5"
@@ -148,7 +148,7 @@ const Register = () => {
                   </label>
                 </div>
 
-                <div className="text-center text-lg-start mt-4 pt-2">
+                <div className="text-center text-lg-start mt-3 pt-2">
                   <button
                     onClick={handleSubmit}
                     id="register-button"
