@@ -12,7 +12,6 @@ const sendToken = (user, statusCode, res) => {
     expires: new Date(Date.now() + oneDay),
     httpOnly: true,
   };
-  // console.log(options.expires)
 
   res.status(statusCode).cookie("token", token, options).json({
     success: true,

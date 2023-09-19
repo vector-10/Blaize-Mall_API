@@ -3,7 +3,7 @@
   margin: 0;
 }
 .loader {
-  margin:250px 300px 300px 800px;
+  margin:250px 300px 300px 700px;
   border: 16px solid #f3f3f3; /* Light grey */
   border-top: 16px solid #210f60; /* Blue */
   border-top: 16px solid#210f60; /* Blue */
@@ -57,4 +57,12 @@ height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.main-product{
+  display: flex;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+
 }

@@ -71,7 +71,7 @@ const UpdateProfile = () => {
                       type="text"
                       id="form3Example3"
                       className="form-control form-control-lg"
-                      placeholder="Enter your full Name"
+                      placeholder="update your full Name"
                       name="name"
                       value={formData.name}
                       onChange={(e) =>
@@ -88,7 +88,7 @@ const UpdateProfile = () => {
                       type="email"
                       id="form3Example4"
                       className="form-control form-control-lg"
-                      placeholder="Enter a valid email address"
+                      placeholder="update your email address"
                       name="email"
                       value={formData.email}
                       onChange={(e) =>

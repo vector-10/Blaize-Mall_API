@@ -18,6 +18,7 @@ import UpdateProfile from "./components/Users/UpdateProfile";
 function App() {
   //useffect functions to load user from backend
   useEffect(() => {
+    console.log("fucntion works");
     store.dispatch(loadUser());
   }, []);
 

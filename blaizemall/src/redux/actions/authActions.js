@@ -76,7 +76,10 @@ export const loadUser = () => async (dispatch) => {
   try {
     dispatch({ type: LOAD_USER_REQUEST });
 
-    const { data } = await axios.get(`${url}/api/v3/me`);
+    const { data } = await axios.get(`${url}/api/v3/me`, {
+      withCredentials: true,
+      credentials: "include",
+    });
     //console.log(data);
 
     dispatch({
@@ -90,7 +93,6 @@ export const loadUser = () => async (dispatch) => {
       type: LOAD_USER_FAIL,
       payload: error.response?.data.message,
     });
-    console.log(error.response?.data.message);
   }
 };
 
@@ -131,7 +133,7 @@ export const updateUserProfile = (userData) => async (dispatch) => {
   } catch (error) {
     dispatch({
       type: UPDATE_PROFILE_FAIL,
-      payload: error.response.data.message,
+      payload: error.response?.data.message,
     });
   }
 };

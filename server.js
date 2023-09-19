@@ -14,6 +14,16 @@ const cloudinary = require("cloudinary");
 const fileUpload = require("express-fileupload");
 // const payments     = require('./routes/paymentRoute');
 
+app.use(function (req, res, next) {
+  res.header("Access-Control-Allow-Origin", "http://localhost:5173");
+  res.header("Access-Control-Allow-Credentials", true);
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-with, Content-Type, Accept"
+  );
+  next();
+});
+
 //middlewares for parsing data
 app.use(express.json());
 app.use(cookieParser());
@@ -48,11 +58,10 @@ process.on("uncaughtException", (err) => {
   console.log(`Shutting down due to uncaught exception`);
   process.exit(1);
 });
-
-connectDB();
-
 //middleware to handle errors
+
 app.use(errorMiddleWare);
+//to allow cookies
 
 //routes URIs
 app.use("/api/v3/", products);
@@ -64,6 +73,8 @@ app.use("/api/v3/", order);
 //     res.json({message: 'Hello from server!'})
 // });
 const PORT = 5000 || process.env.PORT;
+//connect to database function
+connectDB();
 
 const server = app.listen(process.env.PORT, () => {
   console.log(`server is listening on PORT ${process.env.PORT}`);

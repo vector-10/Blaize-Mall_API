@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate, Link } from "react-router-dom";
 // import Loader from "../Layouts/Loader";
-// import AlertComponent from "../AlertComponent";
+import AlertComponent from "../AlertComponent";
 import { useDispatch, useSelector } from "react-redux";
 import { login, clearErrors } from "../../redux/actions/authActions";
 import { motion } from "framer-motion";
@@ -26,9 +26,9 @@ const Login = () => {
   const { isAuthenticated, error, loading } = useSelector(
     (state) => state.auth
   );
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  // const [message, setMessage] = useState(null);
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -37,7 +37,6 @@ const Login = () => {
     if (isAuthenticated) {
       navigate("/home");
     }
-
     if (error) {
       dispatch(clearErrors());
     }
@@ -65,6 +64,19 @@ const Login = () => {
             </div>
             <div className="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
               <form encType="multipart/form-data">
+                {isAuthenticated ? (
+                  <AlertComponent
+                    type="success"
+                    message="User successfully logged in"
+                    timeout={2000}
+                  />
+                ) : (
+                  <AlertComponent
+                    type="danger"
+                    message="User not successfully logged in"
+                    timeout={2000}
+                  />
+                )}
                 <div className="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
                   <p
                     className="lead fw-normal mb-0 me-3 fs-4 fw-bold"

@@ -6,13 +6,13 @@ const catchAsyncErrors = require("./catchAsyncErrors");
 // checks to see if user if authenticated or not to access a resource
 const authenticatedUser = catchAsyncErrors(async (req, res, next) => {
   const { token } = req.cookies;
-  // console.log(req.cookies);
+
   if (!token) {
     return next(new ErrorHandler("Login first to access this resource.", 401));
   }
 
   const decoded = jwt.verify(token, process.env.JWT_SECRET);
-  //console.log(token);
+  console.log(token);
   req.user = await User.findById(decoded.id);
   // console.log(decoded.id);
   next();

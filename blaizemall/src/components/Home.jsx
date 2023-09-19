@@ -22,28 +22,27 @@ const Home = () => {
       {loading ? (
         <Loader />
       ) : (
-        <div className="row row-cols-5 ">
+        <div className="main-product row row-cols-1 row-cols-md-2 g-4">
           {products &&
             products.map((product) => (
               <Product product={product} key={product._id} />
             ))}
         </div>
       )}
-      <div className="notification-card mt-1 mb-2">
-        {error ? (
-          <AlertComponent
-            type="danger"
-            message="Products not successfully loaded"
-            timeout={5000}
-          />
-        ) : (
-          <AlertComponent
-            type="success"
-            message="Products successfully loaded"
-            timeout={5000}
-          />
-        )}
-      </div>
+
+      {error ? (
+        <AlertComponent
+          type="danger"
+          message="Products not successfully loaded"
+          timeout={5000}
+        />
+      ) : (
+        <AlertComponent
+          type="success"
+          message="Products successfully loaded"
+          timeout={5000}
+        />
+      )}
     </div>
   );
 };

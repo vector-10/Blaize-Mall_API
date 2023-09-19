@@ -15,7 +15,7 @@ const Header = () => {
   };
 
   return (
-    <div className="header py-1 " style={{ backgroundColor: "#210f60" }}>
+    <div className="header py-1 mb-2" style={{ backgroundColor: "#210f60" }}>
       <nav className="navbar row ">
         <div className="col-12 col-md-3">
           <div className="navbar-brand d-flex justify-content-center align-items-center">
