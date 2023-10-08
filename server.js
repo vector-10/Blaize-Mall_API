@@ -10,32 +10,23 @@ const connectDB = require("./database.js/connect");
 const errorMiddleWare = require("./middleware/errors");
 const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
-const cloudinary = require("cloudinary");
 const fileUpload = require("express-fileupload");
 // const payments     = require('./routes/paymentRoute');
 
-app.use(function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", "http://localhost:5173");
-  res.header("Access-Control-Allow-Credentials", true);
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-with, Content-Type, Accept"
-  );
-  next();
-});
+// app.use(function (req, res, next) {
+//   res.header("Access-Control-Allow-Origin", "http://localhost:5173");
+//   res.header("Access-Control-Allow-Credentials", true);
+//   res.header(
+//     "Access-Control-Allow-Headers",
+//     "Origin, X-Requested-with, Content-Type, Accept"
+//   );
+// });
 
 //middlewares for parsing data
 app.use(express.json());
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(fileUpload());
-
-//setup the cloudinary
-cloudinary.config({
-  cloud_name: process.env.CLOUDINARY_NAME,
-  api_key: process.env.CLOUDINARY_API_KEY,
-  api_secret: process.env.CLOUDINARY_API_SECRET,
-});
 
 //cors policy for front-end access
 const allowedOrigins = "http://localhost:5173";
@@ -69,11 +60,8 @@ app.use("/api/v3/", auth);
 app.use("/api/v3/", order);
 // app.use('/api/v3/', payments);
 
-// app.get('/', (req, res) => {
-//     res.json({message: 'Hello from server!'})
-// });
 const PORT = 5000 || process.env.PORT;
-//connect to database function
+// call connect to database function
 connectDB();
 
 const server = app.listen(process.env.PORT, () => {
