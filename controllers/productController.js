@@ -5,18 +5,51 @@ const APIFeatures = require("../utils/apiFeatures");
 //const cloudinary = require("../utils/cloudinary");
 
 //create new product => /api/v3/product/new
+// Controller function for creating a new product
+const createProduct = async (req, res) => {
+  try {
+    // Extract product data from the request body
+    const {
+      name,
+      price,
+      description,
+      rating,
+      images,
+      category,
+      seller,
+      stock,
+      numOfReviews,
+      reviews
+    } = req.body;
 
-const createProduct = catchAsyncErrors(async (req, res, next) => {
-  // const { name, price, description, images, category } = req.body;
-  req.body.user = req.user.id;
+    // Get the user ID from the authenticated user (assuming it's available in the request)
+    const userId = req.user.id;
 
-  const product = await Product.create(req.body);
+    // Create a new product instance with the user ID
+    const product = new Product({
+      name,
+      price,
+      description,
+      rating,
+      images,
+      category,
+      seller,
+      stock,
+      numOfReviews,
+      reviews,
+      user: userId // Assigning the user ID to the product's user field
+    });
 
-  res.status(201).json({
-    success: true,
-    product,
-  });
-});
+    // Save the product to the database
+    await product.save();
+
+    // Return success response
+    res.status(201).json({ success: true, data: product });
+  } catch (error) {
+    // Return error response if there's any issue
+    res.status(500).json({ success: false, error: error.message });
+  }
+};
 
 // get all products => /api/v3/products?keyword=apple
 const getAllProducts = catchAsyncErrors(async (req, res, next) => {
